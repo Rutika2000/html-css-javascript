@@ -1,0 +1,149 @@
+* {
+  margin: auto;
+  padding: auto;
+}
+.clockwise {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  z-index: 1;
+  top: 415px;
+  right: 174px;
+}
+
+.anticlock {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  z-index: 1;
+  top: 415px;
+  right: 149px;
+}
+.regulator {
+  cursor: pointer;
+  z-index: 1;
+  position: absolute;
+  width: 55px;
+  right: 143px;
+  top: 361px;
+}
+
+.cir {
+  cursor: pointer;
+  z-index: 1;
+  position: absolute;
+  right: 153px;
+  width: 32px;
+  top: 371px;
+}
+
+.scene .room {
+  width: 100%;
+  overflow-y: hidden;
+  position: absolute;
+}
+
+.scene .fan {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  top: 366px;
+  left: 850px;
+}
+
+.scene .blades {
+  width: 60px;
+  height: 60px;
+  position: relative;
+  top: 331px;
+  left: 766px;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  /* animation-name: fanRotate; */
+}
+
+@keyframes fanRotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#switch {
+  /* background-color: #00ffff; */
+  background-position-y: -27px;
+  display: block;
+  font-size: 21px;
+  font-weight: bold;
+  text-align: center;
+  transform: rotate(-90deg);
+  float: left;
+  position: absolute;
+  z-index: 10;
+  width: 55px;
+  height: 29px;
+  background-image: url(/images/onoff.png);
+  background-size: 97% 219%;
+  /* background-position: -5px -85px; */
+  margin-top: 272px;
+  left: 1267px;
+}
+
+.lamp {
+  width: 72px;
+  height: 0;
+  z-index: 1;
+  position: absolute;
+  top: 314px;
+  left: 251px;
+}
+.trapezoid {
+  z-index: 1;
+  position: absolute;
+  width: 100px;
+  height: 0;
+  border-bottom: 272px solid rgb(242 255 0 / 13%);
+  border-left: 37px solid transparent;
+  border-right: 50px solid transparent;
+  /* background: rgb(0, 0, 0); */
+  /* background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.3) 0%,
+    rgba(255, 255, 0, 1) 100%
+  ); */
+  /* background-image: linear-gradient(
+    gold,
+    rgb(249, 226, 99, ),
+    rgb(242, 224, 122),
+    rgb(245, 236, 184)
+  ); */
+  top: 97px;
+  left: 23px;
+  display: none;
+}
+
+.hglow2 {
+  width: 260px;
+  height: 2px;
+  background-color: #00939366;
+  box-shadow: #00ffff 10px 10px 13px 4px;
+  position: absolute;
+  top: 362px;
+  transform: rotate(-1deg);
+  right: 256px;
+  display: none;
+}
+.hglow {
+  width: 996px;
+  height: 2px;
+  background-color: #0dbbbb6b;
+  box-shadow: #00ffff 10px 10px 13px 4px;
+  position: absolute;
+  /* box-shadow: 0px 0px 50px cyan; */
+  top: 165px;
+  transform: rotate(3deg);
+  display: none;
+}

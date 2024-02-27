@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mr.Bean Spin</title>
+    <link rel="stylesheet" href="mrBeanSpin.css" />
+    <script src="mrBeanSpin.js"></script>
+  </head>
+  <body>
+    <div class="background" id="background">
+      <div class="spin-container" id="spinner">
+        <div class="container">
+        <div class="spinBtn" onclick="clickSpinner()">Spin</div>
+        <div class="wheel">
+          <div class="number" style="--i: 1; --clr: #db7093;">
+            <span>Doremon</span>
+          </div>
+          <div class="number" style="--i: 2; --clr: #20b2aa;">
+            <span>Oggy</span>
+          </div>
+          <div class="number" style="--i: 3; --clr: #d63e92;">
+            <span>Tom</span>
+          </div>
+          <div class="number" style="--i: 4; --clr: #daa520;">
+            <span>Shinchan</span>
+          </div>
+          <div class="number" style="--i: 5; --clr: #ff340f;">
+            <span>Mr.Bean</span>
+          </div>
+          <div class="number" style="--i: 6; --clr: #ff7f50;">
+            <span>Jerry</span>
+          </div>
+          <div class="number" style="--i: 7; --clr: #2cb371;">
+            <span>Micky</span>
+          </div>
+          <div class="number" style="--i: 8;--clr: #4169e1;">
+            <span>Oswal</span>
+          </div>
+        </div>
+      </div></div></div></div>
+
+      <div class="wrapper">
+        <input type="checkbox" id="darkmode-toggle" onclick="clickHandler()" />
+        <label for="darkmode-toggle"></label>
+      </div>
+      <div class="lamp-container">
+        <img src="/images/lamp2.png" alt="lamp" class="lamp" id="lamp"/>
+        <img src="/images/bean.gif" alt="light" class="light" id="light" />
+      </div>
+    </div>
+  </body>
+</html>

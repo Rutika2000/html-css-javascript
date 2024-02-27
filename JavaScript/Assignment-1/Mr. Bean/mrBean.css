@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  height: 100%;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: center;
+  z-index: 1000;
+}
+
+label {
+  width: 250px;
+  height: 100px;
+  position: relative;
+  display: block;
+  background: #ebebeb;
+  border-radius: 200px;
+
+  box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4),
+    inset 0px -5px 15px rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+label:after {
+  content: "";
+  width: 90px;
+  height: 90px;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  background: linear-gradient(180deg, #ffcc89, #d8860b);
+  border-radius: 90px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+input {
+  width: 0;
+  height: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+
+input:checked + label {
+  background: #242424;
+}
+
+input:checked + label::after {
+  left: 245px;
+  transform: translate(-100%);
+  background: linear-gradient(180deg, #777, #3a3a3a);
+}
+
+label:active::after {
+  width: 130px;
+}
+
+.background {
+  height: 100%;
+  width: 100%;
+  background: #000;
+  z-index: -1;
+  position: absolute;
+  transition: 0.3s;
+}
+input:checked + label + .background {
+  background: #242424;
+}
+
+.lamp-container {
+  z-index: 10;
+  position: relative;
+  margin-left: 200px;
+  /* position: relative; */
+}
+.lamp-container .lamp {
+  /* width: 250px;
+  position: absolute;
+  top: -390px;
+  left: 380px; */
+
+  width: 838px;
+  position: absolute;
+  top: -297px;
+  left: 78px;
+}
+
+.lamp-container .light {
+  position: absolute;
+  display: none;
+  top: 167px;
+  height: 503px;
+  left: 150px;
+}

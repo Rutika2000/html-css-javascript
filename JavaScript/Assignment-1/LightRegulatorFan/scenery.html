@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scenery</title>
+    <link rel="stylesheet" href="scenery.css" />
+    <script src="scenery.js"></script>
+  </head>
+  <body>
+    <div class="wrapper" id="wrapper">
+      <div class="scene">
+        <img src="/images/room2.png" alt="scene" class="room" />
+        <img src="/images/fan.png" alt="fan" class="fan" />
+        <img src="/images/blades.png" alt="blades" class="blades" id="blades" />
+        <div href="#" id="switch" onclick="turnOn()"></div>
+        <div class="reg-container">
+          <img
+            src="/images/regulator.jpg"
+            alt="regulator"
+            id="regulator"
+            class="regulator"
+            style="cursor: pointer"
+          />
+          <img
+            src="/images/cir.png"
+            alt="cir"
+            class="cir"
+            id="cir"
+            style="transform: rotate(0deg)"
+            style="cursor: pointer"
+          />
+        </div>
+        <img
+          src="/images/right.png"
+          class="clockwise"
+          onclick="rotateRegulator(60)"
+        />
+        <img
+          src="/images/left.png"
+          class="anticlock"
+          onclick="rotateRegulator(-60)"
+        />
+
+        <div class="hglow" id="hglow"></div>
+        <div class="hglow2" id="hglow2"></div>
+      </div>
+      <div class="lamp">
+        <div class="glow"></div>
+        <img src="/images/tablelamp.png" alt="table lamp" />
+        <div class="trapezoid" id="trapezoid"></div>
+      </div>
+    </div>
+  </body>
+</html>
